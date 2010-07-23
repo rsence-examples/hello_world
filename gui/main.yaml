@@ -1,0 +1,41 @@
+# User interface code
+type: GUITree
+version: 0.6
+# Default dependencies
+dependencies:
+- default_theme
+- controls
+class: RSence.GUIApp
+options:
+  # A short description or a name of the application. 
+  # Visible in task managers and such.
+  label: Hello World
+subviews:
+  # Selected component, check client side API:
+  # http://rsence.org/client_api/HStringView.html
+  # for standard components
+  # http://rsence.org/projects/rsence/wiki 
+  # for advanced customization (-> e.g. custom components)
+- class: HStringView
+  # Coordinates,
+  # http://rsence.org/client_api/HControl.html#constructor 
+  # for the reference
+  rect: [50, 45, 100, 60]
+  # Dynamically bound value from values.yaml
+  bind: :values.text_value
+  # Optional parameters
+  options:
+    # Style property, sets CSS style, 
+    # http://www.w3schools.com/css/css_reference_atoz.asp
+    # for the reference
+    style: 
+      - ['text-align', center]
+  # HClickButton, http://rsence.org/client_api/HClickButton.html
+- class: HClickButton
+  rect: [50, 20, 100, 24]
+  bind: :values.button_value
+  options:
+    # Label property
+    label: "Click me!"
+
+    

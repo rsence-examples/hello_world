@@ -1,0 +1,11 @@
+# The human-readable product name of the package
+title: Hello World
+
+# The human-readable version of the package
+version: 1.0.0
+
+# A brief description of the package (rdoc formatting supported)
+description: | Very simple hello world example with server side value interaction
+
+# System version requirement.
+sys_version: '>= 2.0.0'
