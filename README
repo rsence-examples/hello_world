@@ -1,4 +1,6 @@
-Very simple hello world program
+A very simple hello world plugin. This example demonstrates the session 
+specific value access by greeting the client with "Hello World" upon button 
+click.
 
 Dependencies:
 RSence 2.0 or higher (http://rubygems.org/gems/rsence)
