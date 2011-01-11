@@ -1,15 +1,14 @@
-# :button_value: is the name for value	
-# :value: denotes the initial value
-# :responders: will be fired on the server side when the value changes
+# button_value: is the name for value	
+# data: denotes the initial value
+# responder: will be fired on the server side when the value changes
 # Check http://rsence.org/server_api/file.Values.html for further info
 
 # A dynamic value for HClickButton. Initial value of 0 signals
 # that the button is clickable and enabled.
-:button_value:
-  :value: 0
-  :responders:
-    - :method: button_responder
+button_value:
+  data: 0
+  responder: button_responder
 # A dynamic value for HStringView. This will be changed to "Hello World" when 
 # the button is clicked.
-:text_value:
-  :value: "To change this text!"
+text_value:
+  data: "To change this text!"
